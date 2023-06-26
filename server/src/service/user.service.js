@@ -1,4 +1,4 @@
-const { createUserDB, getUserDB, getUserIDDB, deleteUserDB } = require('../repository/user.repositiry')
+const { createUserDB, getUserDB,updateUserDB, getUserIDDB, deleteUserDB } = require('../repository/user.repositiry')
 
 async function getUser() {
     return await getUserDB()
@@ -12,10 +12,14 @@ async function createUser(name, surname, email, pwd, role) {
     return user
 }
 
+async function updateUser(id, name, surname, email, pwd, role) {
+    return await updateUserDB(id, name, surname, email, pwd, role)
+}
+
 async function deleteUser(id) {
     const user = await deleteUserDB(id)
     return user
 }
 
 
-module.exports = { createUser, getUser, getUserID, deleteUser }
+module.exports = { createUser,updateUser, getUser, getUserID, deleteUser }
