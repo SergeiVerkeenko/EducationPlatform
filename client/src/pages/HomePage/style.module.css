@@ -4,7 +4,7 @@
     justify-content: space-between;
     position: relative;
     margin: 50px auto 0;
-
+    background-color: #F6F5F4;
 }
 
 .preview .textPlatform {
@@ -24,6 +24,7 @@
     color: #757575;
     width: 395px;
     height: 50px;
+
 }
 
 .preview .btn {
@@ -52,7 +53,8 @@
 }
 
 .preview .studentsCount {
-    font: 400 40px 'Dela Gothic One';
+    font: 800 40px 'Dela Gothic One';
+    color: #000000;
 }
 
 .preview .studentsText {
@@ -66,7 +68,7 @@
     width: 175px;
 }
 
-.preview .img{
+.preview .img {
     width: 933px;
     height: 601px;
     background-repeat: no-repeat;
@@ -76,6 +78,89 @@
     left: 50%;
 }
 
-.preview .content{
+.preview .content {
     width: 520px;
+}
+
+.blockcentr {
+    display: flex;
+    margin-top: 20px;
+}
+
+.iog {
+    width: 580px;
+    height: 445px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./assets/iog.svg);
+}
+
+.centr {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    margin: 200px auto 0;
+    background-color: #FFFFFF;
+    padding-top: 50px;
+}
+
+.crossovka {
+    width: 130px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./assets/crossovka.svg);
+}
+
+.rupor {
+    width: 200px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./assets/rupor.svg);
+}
+
+.centr h1 {
+    color: #000000;
+    font: 400 56px 'Dela Gothic One';
+    margin-bottom: 20px;
+}
+
+.contentRight {
+    width: 620px;
+    margin-left: 140px;
+}
+
+.centr .textAdditional {
+    font: 600 18px 'Montserrat';
+    color: #757575;
+    width: 520px;
+    height: 50px;
+}
+
+.gerl{
+    width: 580px;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./assets/gerl.svg);
+}
+
+.parochka{
+    width: 580px;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./assets/parochka.svg);
+}
+
+.centr .btn {
+    border-radius: 100px;
+    background: var(--primaty-cyan-light, #C3DCE3);
+    color: #2B788B;
+    background-color: #C3DCE3;
+    padding: 14px 22px;
+    width: 165px;
+    text-align: center;
 }

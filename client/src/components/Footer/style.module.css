@@ -1,0 +1,24 @@
+.wrapper {
+    width: 100%;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.navigLeft p {
+    margin-left: 15px;
+    color: var(--primaty-grey-dark, #757575);
+    font: 600 14px 'Montserrat';
+}
+
+.polosa {
+    height: 1200px;
+    border: none;
+    /* Убираем границу */
+    background-color: #E0E0E0;
+    /* Цвет линии */
+    height: 1px;
+    /* Толщина линии */
+    margin: 20px 0;
+}
