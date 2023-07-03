@@ -1,13 +1,13 @@
 .wrapper {
-    width: 100%;
+    width: 1200px;
     align-items: flex-start;
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
+    justify-content: space-between;
+    margin: 20px auto;
 }
 
 .navigLeft p {
-    margin-left: 15px;
+    margin-right: 15px;
     color: var(--primaty-grey-dark, #757575);
     font: 600 14px 'Montserrat';
 }
@@ -21,4 +21,43 @@
     height: 1px;
     /* Толщина линии */
     margin: 20px 0;
+}
+
+.kotik {
+    width: 30px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./assets/kotik.svg);
+}
+
+.gt {
+    width: 30px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./assets/GT.svg);
+
+}
+
+.yuotobe {
+    width: 30px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./assets/yuotoob.svg);
+
+}
+
+.wrapperNiz {
+    width: 1200px;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.wrapperNiz p {
+    color: var(--primaty-grey-dark, #757575);
+    font: 600 12px 'Montserrat';
 }

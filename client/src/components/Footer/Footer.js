@@ -22,6 +22,14 @@ function Footer() {
                 </div>
             </div>
             <div className={style.polosa}></div>
+            <div className={style.wrapperNiz}>
+                <nav>
+                    <div className={style.kotik}></div>
+                    <div className={style.gt}></div>
+                    <div className={style.yuotobe}></div>
+                </nav>
+                <p>©2021 Hschool. Project for Hschool.</p>
+            </div>
         </>
     )
 }
