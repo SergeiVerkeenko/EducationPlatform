@@ -5,16 +5,17 @@ import { useCreateUserMutation } from '../../services/user'
 import React, { useState } from 'react';
 
 function RegistrationPage() {
-    const [createCourse] = useCreateUserMutation()
+    const [createUser] = useCreateUserMutation()
     const [value, setValue] = useState({ name: '', surname: '', email: '' , pwd: '' , role: '' })
 
     function sendRequest() {
-        createCourse(value)
+        createUser(value)
     }
 
     function changeInputValue(event) {
         setValue({ ...value, [event.target.name]: event.target.value })
     }
+
     return (
         <>
             <Header />
@@ -34,11 +35,11 @@ function RegistrationPage() {
                     </div>
 
                     <div>
-                        <input name='pwd' type='password' onChange={changeInputValue} placeholder='Password' />
+                        <input name='pwd'  onChange={changeInputValue} placeholder='Password' />
                     </div>
 
                     <div>
-                        <input name='role' onChange={changeInputValue} placeholder='Rolle ' />
+                        <input name='role' onChange={changeInputValue} placeholder='Role ' />
                     </div>
 
                     <div onClick={sendRequest} className={style.btn}>Login</div>

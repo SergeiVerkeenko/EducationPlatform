@@ -1,5 +1,7 @@
 const { pool } = require('../DB')
 
+const jwt = require('jsonwebtoken')
+
 async function getUserDB() {
     const client = await pool.connect()
     const sql = 'SELECT * FROM USERS'
